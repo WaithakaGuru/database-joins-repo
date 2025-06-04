@@ -2,3 +2,4 @@ data/csv
 env/
 venv/
 .env
+.venv/
