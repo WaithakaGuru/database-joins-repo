@@ -100,7 +100,7 @@ ON table1.column = table2.column;
 
 ## 3. Types of Joins in SQL
 
-<img src="../ERD/venn.png.png" alt="the venn diagram">
+<img src="../images/venn.png.png" alt="the venn diagram">
 
 ### 3.1 Inner Join
 
