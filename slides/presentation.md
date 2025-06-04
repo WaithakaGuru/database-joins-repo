@@ -85,6 +85,41 @@ LEFT JOIN doctors on patients.doctor_id = doctors.id;
 ![alt text](../images/joins/LEFT_JOIN_RESULT.png)
 
 *All doctors included, even without assigned patients*
+
+__Example 2__
+
+Using the current hospital_db: 
+
+Running 
+```sql
+SELECT * FROM patients;
+```
+Fetches the data from `patients` table resulting to: 
+
+![Patient Image](../images/joins/LEFT_JOIN_IMAGES/patient.png)
+
+Running 
+```sql
+SELECT * FROM doctors;
+```
+Fetches the data from `doctors` table resulting to: 
+
+![Doctors Image](../images/joins/LEFT_JOIN_IMAGES/image.png)
+
+__PERFORMING a LEFT JOIN__
+
+```sql
+SELECT p.patient_name AS P_Name,
+p.dob P_Date_of_Birth,
+d.id AS doctor_ID, d.doc_name Doctor_Name
+FROM patients p 
+LEFT JOIN 
+doctors d
+ON p.doctor_id = d.id;
+```
+Resulting to: 
+![LEFT JOIN RESULT IMAGE](../images/joins/LEFT_JOIN_IMAGES/LEFT_JOIN_RESULT.png)
+
 ---
 
 ## SELF JOIN
