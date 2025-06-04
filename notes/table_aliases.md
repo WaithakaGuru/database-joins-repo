@@ -23,17 +23,15 @@ FROM table_name alias_name;
 
 ## Example 1
 ```sql
-SELECT e.name, d.department_name
-FROM employees AS e
-JOIN departments AS d ON e.department_id = d.id;
+SELECT p.patient_name, p.DOB
+FROM patients p;
 ```
 
 ## Example 2
 ```sql
-SELECT avg_salary.dept_id, avg_salary.avg_sal
-FROM (
-  SELECT department_id AS dept_id, AVG(salary) AS avg_sal
-  FROM employees
-  GROUP BY department_id
-) AS avg_salary;
+SELECT 
+    p.patient_name,
+    p.DOB
+FROM patients p
+WHERE TO_DATE(p.DOB, 'MM-DD-YY') > '2025-01-01';
 ```
