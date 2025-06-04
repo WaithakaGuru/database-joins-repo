@@ -88,6 +88,7 @@ python3 data_loader/run_copy_commands.py
 
 ## 👨‍💻 Contributors
 - Arman ([Arman On Github](github.com/arman-develops))
+- JohnMwihaki ([JohnMwihaki On Github](github.com/JohnMwihaki))
 - Waithaka Amos [WaithakaGuru on Github](https://github.com//WaithakaGuru)
 
  🎉 Happy Coding Champ
