@@ -18,3 +18,49 @@ SELECT
 FROM products
 FULL JOIN categories 
     ON products.category_id = categories.category_id;
+
+# PostgreSQL Joins via Terminal (Linux)
+
+## Are you using Linux?
+
+###  Access PostgreSQL Terminal
+
+```bash
+sudo -u postgres psql -d hospital_db
+
+## Join Command Syntax
+sql
+
+SELECT [columns]
+FROM table1
+[FULL|LEFT|RIGHT|INNER] JOIN table2 
+  ON table1.column = table2.column;
+
+## Practical Examples
+FULL JOIN (All records from both tables)
+sql
+
+SELECT p.patient_name, d.doctor_name
+FROM patients p
+FULL JOIN doctors d ON p.doctor_id = d.doctor_id;
+
+LEFT JOIN (All patients + matching doctors)
+sql
+
+SELECT p.patient_name, d.doctor_name
+FROM patients p
+LEFT JOIN doctors d ON p.doctor_id = d.doctor_id;
+
+RIGHT JOIN (All doctors + matching patients)
+sql
+
+SELECT p.patient_name, d.doctor_name
+FROM patients p
+RIGHT JOIN doctors d ON p.doctor_id = d.doctor_id;
+
+INNER JOIN (Only matching records)
+sql
+
+SELECT p.patient_name, d.doctor_name
+FROM patients p
+INNER JOIN doctors d ON p.doctor_id = d.doctor_id;
