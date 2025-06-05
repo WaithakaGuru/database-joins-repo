@@ -37,6 +37,7 @@ FROM table1
   ON table1.column = table2.column;
 
 ## Practical Examples
+
 FULL JOIN (All records from both tables)
 sql
 
