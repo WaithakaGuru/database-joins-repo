@@ -20,9 +20,7 @@ FULL JOIN categories
     ON products.category_id = categories.category_id;
 
 # PostgreSQL Joins via Terminal (Linux)
-
 ## Are you using Linux?
-
 ###  Access PostgreSQL Terminal
 
 ```bash
