@@ -34,20 +34,20 @@ We can also skip the AS keyword and get the same result:
 SELECT doc_name doctor_name FROM doctors
 ```
 
-![doctor_name_alias](../images/DOCTOR_NAME_ALIAS.png)
+![doctor_name_alias](../images/data_img/DOCTOR_NAME_ALIAS.png)
 
 ---
 
 ## Sample Data
 
 **DOCTORS**
-![doctor's data](../images/DOCTORS_DATA.png)
+![doctor's data](../images/data_img/DOCTORS_DATA.png)
 
 **PATIENTS**
-![patient data](../images/PATIENT_DATA.png)
+![patient data](../images/data_img/PATIENT_DATA.png)
 
 **APPOINTMENTS**
-![appointments data](../images/APPOINTMENT_DATA.png)
+![appointments data](../images/data_img/APPOINTMENT_DATA.png)
 
 ---
 
