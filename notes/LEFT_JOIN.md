@@ -22,13 +22,13 @@ SELECT left_table.column1, right_table.column2
 FROM left_table
 LEFT JOIN right_table
 ON 
-left_table.column_with_FK = right_table.column_with_PK
+left_table.common_column = right_table.common_column
 ```
 ---
 
 ## Practical Example 
 
-Say one is working on a companies Database with Employees_table and Deaprtments_table and wants to fetch each Employee alongside his/her department
+Say one is working on a companies Database with Employees_table and Departments_table and wants to fetch each Employee alongside his/her department
 
 `employee` (__left table__)
 
